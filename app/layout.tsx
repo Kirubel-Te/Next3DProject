@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
-import { Albert_Sans } from "next/font/google";
+import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 import Nav from "./Nav";
 import "./globals.css";
 
 const albertSans = Albert_Sans({
-  variable: "--font-albert-sans",
   subsets: ["latin"],
+  display: "swap",
 });
+
+const montserratAlternates = Montserrat_Alternates({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-montserrat-alternates",
+});
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${albertSans.variable} antialiased`}>
+      <body className={`${albertSans.className} ${montserratAlternates.variable} `}>
         <Nav />
         {children}
       </body>

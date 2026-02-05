@@ -18,10 +18,10 @@ const page = () => {
             </div>
             <div className='flex flex-col justify-center'>
                 <h3 className='mb-4 md:mb-7 uppercase text-xs sm:text-sm md:text-base tracking-wide'>About printforge</h3>
-                <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold montserrat-alternates-bold mb-4 md:mb-7'>Empowering makers worldwide</h1>
+                <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-7'>Empowering makers worldwide</h1>
                 <p className='mb-8 md:mb-12 text-base sm:text-lg md:text-xl font-light'>Founded in 2023, PrintForge has quickly become the go-to platform for 3D printing enthusiasts, makers, and professional designers to share and discover amazing STL files for 3D printing</p>
                 <br/>
-                <p className='text-base sm:text-lg md:text-2xl font-light'>Our mission is to foster a vibrant community where creativity meets technology, enabling anyone to bring their ideas to life through 3D printing</p>
+                <p className='text-base sm:text-lg md:text-xl font-light'>Our mission is to foster a vibrant community where creativity meets technology, enabling anyone to bring their ideas to life through 3D printing</p>
             </div>
         </div>
         <br/>
@@ -52,7 +52,7 @@ const page = () => {
         <hr className='font-extralight border-t border-gray-600/60'/>
         <br/>
         <div className='w-[48%] mx-auto mb-12 mt-10'>
-            <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold montserrat-alternates-bold mb-4 md:mb-7'>Our Vision</h1>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-7'>Our Vision</h1>
             <p className='text-sm sm:text-base md:text-lg'>At PrintForge, we believe that 3D printing is revolutionizing the way we create, prototype, and manufacture. Our platform serves as a bridge between designers and makers, enabling the sharing of knowledge and creativity that pushes the boundaries of what's possible with 3D printing</p>
             <br/>
             <hr className='w-[40%] mx-auto'/>
