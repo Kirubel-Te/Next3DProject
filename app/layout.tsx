@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Albert_Sans } from "next/font/google";
+import Nav from "./Nav";
 import "./globals.css";
 
 const albertSans = Albert_Sans({
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${albertSans.variable} antialiased`}>
+        <Nav />
         {children}
       </body>
     </html>
