@@ -6,11 +6,11 @@ const page = () => {
   return (
     <section>
         <div className='mt-7 w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8'>
-            <div className='flex justify-center'>
+            <div className='flex justify-center rounded-xl'>
                 <Image
                 src="/hero-image 1.png"
                 alt="About Us"
-              className='w-full h-auto'
+              className='w-full h-auto rounded-2xl'
               width={800}
               height={300}
               sizes="100vw"
@@ -58,6 +58,15 @@ const page = () => {
             <hr className='w-[40%] mx-auto'/>
             <br/>
             <p className='text-sm sm:text-base md:text-lg'>Whether you're a hobbyist looking for your next weekend project, an educator seeking teaching materials, or a professional designer wanting to share your creations, PrintForge provides the tools and community to support your journey in 3D printing.</p>
+        </div>
+        <div className='water-mark-div'>
+            <Image
+                src='/printforge-logo-icon.svg'
+                alt='PrintForge Logo'
+                width={320}
+                height={320}
+                className='mx-auto font-extralight opacity-50'
+            />
         </div>
     </section>
     
