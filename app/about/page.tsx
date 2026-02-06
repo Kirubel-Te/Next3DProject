@@ -59,7 +59,7 @@ const page = () => {
             <br/>
             <p className='text-sm sm:text-base md:text-lg'>Whether you're a hobbyist looking for your next weekend project, an educator seeking teaching materials, or a professional designer wanting to share your creations, PrintForge provides the tools and community to support your journey in 3D printing.</p>
         </div>
-        <div className='water-mark-div'>
+        <div className='water-mark-div mb-6'>
             <Image
                 src='/printforge-logo-icon.svg'
                 alt='PrintForge Logo'
