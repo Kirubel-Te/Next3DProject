@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="relative grid md:grid-cols-2 grid-cols-1 gap-5 w-[80%] mt-12 mb-5 mx-auto">

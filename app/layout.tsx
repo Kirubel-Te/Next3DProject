@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 import Nav from "./Nav";
 import "./globals.css";
+import type { RootLayoutProps } from "./types";
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],
@@ -24,9 +25,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`${albertSans.className} ${montserratAlternates.variable} `}>
