@@ -1,3 +1,4 @@
+import Link from 'next/dist/client/link'
 import Image from 'next/image'
 import React from 'react'
 
@@ -8,6 +9,7 @@ type PageCardProps = {
   description: string
   category: string
   likes: number
+  id: string | number
 }
 
 const PageCard = ({
@@ -17,11 +19,12 @@ const PageCard = ({
   description,
   category,
   likes,
+  id,
 }: PageCardProps) => {
   const likesLabel = Number.isFinite(likes) ? likes.toLocaleString() : '0'
 
   return (
-    <article className="group flex h-full w-full max-w-sm flex-col overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-transform duration-300 hover:-translate-y-1">
+    <Link href={`/3d-models/${id}`}><article className="group flex h-full w-full max-w-sm flex-col overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-transform duration-300 hover:-translate-y-1">
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
         <Image
           src={imageSrc}
@@ -58,7 +61,7 @@ const PageCard = ({
           </span>
         </div>
       </div>
-    </article>
+    </article></Link>
   )
 }
 

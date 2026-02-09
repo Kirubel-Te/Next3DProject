@@ -4,7 +4,7 @@ import { Globe, Flag, Files } from 'lucide-react'
 
 const page = () => {
   return (
-    <section>
+    <section className='bg-slate-50 min-h-screen py-10'>
         <div className='mt-7 w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8'>
             <div className='flex justify-center rounded-xl'>
                 <Image

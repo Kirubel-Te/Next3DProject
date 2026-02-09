@@ -17,6 +17,7 @@ const page = async () => {
           {models.map((model) => (
             <PageCard
               key={model.id}
+              id={model.id}
               name={model.name}
               description={model.description}
               category={model.category}
