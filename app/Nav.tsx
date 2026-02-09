@@ -20,7 +20,7 @@ const Nav = () => {
         <div className="flex items-center">
           <ul className="flex items-center gap-4 text-md font-medium text-slate-700 md:gap-8 md:text-lg">
             <li>
-              <Link className="transition-colors hover:text-slate-900" href="/models">
+              <Link className="transition-colors hover:text-slate-900" href="/3d-models">
                 3D Models
               </Link>
             </li>
