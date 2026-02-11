@@ -17,3 +17,32 @@ export type ModelDetailPageProps = {
         id: string
     }>
 }
+import type { ReactNode } from "react"
+
+
+
+export type Category = {
+    displayName: string
+    slug: string
+}
+
+export type CategoriesData = {
+    categories: Category[]
+}
+
+
+
+// Components Types
+export type ModelCardProps = {
+    model: Model
+}
+
+export type ModelsGridProps = {
+    title: string
+    models: Model[]
+}
+
+export type PillProps = {
+    children: ReactNode
+    className?: string
+}
