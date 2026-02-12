@@ -28,7 +28,7 @@ const PageCard = ({
 
   return (
     <Link href={`/3d-models/${id}`}><article className="group flex h-full w-full max-w-sm flex-col overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-transform duration-300 hover:-translate-y-1">
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+      <div className="relative aspect-4/3 w-full overflow-hidden bg-slate-100">
         <Image
           src={imageSrc}
           alt={imageAlt}
