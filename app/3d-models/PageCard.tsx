@@ -1,6 +1,8 @@
 import Link from 'next/dist/client/link'
 import Image from 'next/image'
 import React from 'react'
+import categories from "../data/categories.json"
+import { Category } from '../types'
 
 type PageCardProps = {
   imageSrc: string
@@ -22,6 +24,7 @@ const PageCard = ({
   id,
 }: PageCardProps) => {
   const likesLabel = Number.isFinite(likes) ? likes.toLocaleString() : '0'
+  const categorySlug = categories.find(c => c.displayName === category)?.slug || 'uncategorized'
 
   return (
     <Link href={`/3d-models/${id}`}><article className="group flex h-full w-full max-w-sm flex-col overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-transform duration-300 hover:-translate-y-1">
@@ -38,8 +41,8 @@ const PageCard = ({
       <div className="flex flex-1 flex-col gap-3 p-5">
         <h3 className="text-lg font-semibold tracking-tight text-slate-900">{name}</h3>
         <p className="line-clamp-3 text-sm leading-6 text-slate-600">{description}</p>
-        <div className="mt-auto flex items-center justify-between text-xs font-medium uppercase tracking-wider">
-          <span className="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
+        <div className="mt-auto flex flex-col gap-4 text-xs font-medium uppercase tracking-wider">
+          <span className="w-fit rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
             {category}
           </span>
           <span className="flex items-center gap-1.5 text-slate-500">
