@@ -7,7 +7,7 @@ const page = async({params}:CategoryPageProps) => {
     const { categoryName } = await params
     const models = getCategoryBySlug(categoryName)
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-[calc(100dvh-64px)] bg-slate-50">
       <div className="mx-auto flex max-w-[90%] flex-col gap-8 px-6 py-10">
         <CategoryNav activeSlug={categoryName} variant="mobile" />
         <div className="flex flex-col gap-8 lg:flex-row">
