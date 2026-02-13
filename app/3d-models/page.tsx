@@ -18,18 +18,20 @@ const page = async () => {
                 Browse the latest community uploads and find your next print.
               </p>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {models.map((model) => (
-                <PageCard
-                  key={model.id}
-                  id={model.id}
-                  name={model.name}
-                  description={model.description}
-                  category={model.category}
-                  likes={model.likes}
-                  imageSrc='/hero-image 1.png'
-                />
-              ))}
+            <div className="mx-auto w-[96%]">
+              <div className="grid w-full justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                {models.map((model) => (
+                  <PageCard
+                    key={model.id}
+                    id={model.id}
+                    name={model.name}
+                    description={model.description}
+                    category={model.category}
+                    likes={model.likes}
+                    imageSrc='/hero-image 1.png'
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

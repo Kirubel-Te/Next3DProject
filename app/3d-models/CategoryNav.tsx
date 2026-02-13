@@ -14,14 +14,14 @@ const CategoryNav = ({ activeSlug, variant = 'mobile' }: CategoryNavProps) => {
   if (variant === 'sidebar') {
     return (
       <aside className="hidden lg:block lg:w-44 lg:shrink-0">
-        <div className="sticky top-24 flex flex-col items-center">
+        <div className="sticky top-24 flex flex-col items-start">
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
             Categories
           </p>
-          <ul className="mt-4 flex flex-col items-center gap-3">
+          <ul className="mt-4 flex flex-col items-start gap-5">
             <li>
               <Link
-                className={`flex items-center gap-3 text-base font-semibold transition-colors ${
+                className={`flex items-center gap-3 text-base font-semibold uppercase tracking-wide transition-colors ${
                   isAllActive
                     ? 'text-orange-500'
                     : 'text-slate-700 hover:text-slate-900'
@@ -41,7 +41,7 @@ const CategoryNav = ({ activeSlug, variant = 'mobile' }: CategoryNavProps) => {
               return (
                 <li key={category.slug}>
                   <Link
-                    className={`flex items-center gap-3 text-base font-semibold transition-colors ${
+                    className={`flex items-center gap-3 text-base font-semibold uppercase tracking-wide transition-colors ${
                       isActive
                         ? 'text-orange-500'
                         : 'text-slate-700 hover:text-slate-900'
