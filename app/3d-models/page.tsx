@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from 'next/form'
 import { getAllModels } from '../lib/models'
 import PageCard from './PageCard'
 import CategoryNav from './CategoryNav'
@@ -19,9 +20,9 @@ const page = async ({searchParams}: {searchParams: object}) => {
               <p className="max-w-2xl text-sm text-slate-600">
                 Browse the latest community uploads and find your next print.
               </p>
-              <form>
+              <Form action="/3d-models">
                 <input type='text' placeholder='Search models...' className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500" name='query' autoComplete='off'/>
-              </form>
+              </Form>
             </div>
             <div className="mx-auto w-[96%]">
               <div className="grid w-full justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-4">
