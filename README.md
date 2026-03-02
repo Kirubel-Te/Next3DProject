@@ -2,6 +2,10 @@
 
 PrintForge is a Next.js (App Router) project that showcases a 3D printing model directory. It includes a landing page, a models catalog with search and category filters, model detail pages, and an about page. Data is currently served from local JSON files, structured so it can be swapped for a real API later.
 
+## Demo Deployment
+
+- Live demo: https://next3-d-project.vercel.app/
+
 ## Key Features
 
 - Home page with a hero section and call-to-action.
